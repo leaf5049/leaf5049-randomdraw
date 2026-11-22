@@ -22,7 +22,23 @@
 - **原生遮罩**：用 `NotificationTwoIconsMaskTemplate` 显示姓名，3 秒自动消失；朗读走 ClassIsland 自带 TTS（关掉提醒音效，避免和朗读叠声）。
 - **设置页**：名单多行编辑、已抽中查看/撤销/清空、滑窗大小（1–500）可调，全部落在插件自己的数据文件里，不用翻文件夹。
 
-## 安装
+## 在应用内直接安装
+
+**方式一：官方插件市场（审核通过后）**
+
+插件已提交到 ClassIsland 官方插件源（[PluginIndex PR #240](https://github.com/ClassIsland/PluginIndex/pull/240)）。合并后即可在 设置 → 插件 → **市场** 里搜到「随机抽选」，点安装，后续版本也会在应用里提示更新。
+
+**方式二：添加作者的自定义插件源（不用等审核，立即可用）**
+
+1. 设置 → 插件 → 切到「市场」标签页
+2. 点右上角「…」→ **管理插件源** → 自定义插件源 → 点「+」
+3. Url 填入：`https://github.com/leaf5049/leaf5049-randomdraw/releases/download/market/leaf5049-market.zip`
+4. 确定 → 关闭抽屉 → 在市场页点「刷新」
+5. 列表出现「随机抽选」后点下载安装，按提示重启 ClassIsland
+
+> 访问 GitHub 慢的话，可在「管理插件源」里把镜像换成 `ghproxy` 或 `moeyy` 再刷新。
+
+## 本地安装
 
 1. 下载 **[leaf5049.randomdraw.cipx](https://github.com/leaf5049/leaf5049-randomdraw/releases/latest/download/leaf5049.randomdraw.cipx)**（约 112 KB），在 ClassIsland → 设置 → 插件 → 从本地安装。
 2. 或者在 ClassIsland 里打开插件目录，把 `leaf5049.randomdraw` 文件夹放进去后重启。
