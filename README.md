@@ -1,5 +1,10 @@
 # 随机抽选（ClassIsland 插件）
 
+[![Release](https://img.shields.io/github/v/release/leaf5049/leaf5049-randomdraw?label=%E4%B8%8B%E8%BD%BD)](https://github.com/leaf5049/leaf5049-randomdraw/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/leaf5049/leaf5049-randomdraw/total)](https://github.com/leaf5049/leaf5049-randomdraw/releases)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![ClassIsland](https://img.shields.io/badge/ClassIsland-2.x-5B8FF9)](https://github.com/ClassIsland/ClassIsland)
+
 给 [ClassIsland](https://github.com/ClassIsland/ClassIsland) 用的公平点名器：在「行动」里加一个「随机抽选」，点一下就从名单里抽一名同学，用 ClassIsland 原生通知遮罩显示 3 秒并朗读，抽中的人会被记录，按滑动窗口保证同一周期内不重复。
 
 - 插件 id：`leaf5049.randomdraw`
@@ -19,7 +24,7 @@
 
 ## 安装
 
-1. 下载 `leaf5049.randomdraw.cipx`（在 Releases 或 `dist/` 里），在 ClassIsland → 设置 → 插件 → 从本地安装。
+1. 下载 **[leaf5049.randomdraw.cipx](https://github.com/leaf5049/leaf5049-randomdraw/releases/latest/download/leaf5049.randomdraw.cipx)**（约 112 KB），在 ClassIsland → 设置 → 插件 → 从本地安装。
 2. 或者在 ClassIsland 里打开插件目录，把 `leaf5049.randomdraw` 文件夹放进去后重启。
 3. 到 设置 → 自动化 → 新建行动组，添加「随机抽选」（点名分组），给它配一个触发器（热键、时间点、浮动按钮都可以）。
 4. 名单：第一次运行会生成示例 `名单.txt`；也可以在 设置 → 随机抽选 里直接编辑保存。
@@ -62,6 +67,11 @@ $env:CLASSISLAND_DIR = "C:\Program Files\ClassIsland\app-2.1.0.1-0"   # 指向�
 | `tests/harness` | 行动逻辑：遮罩模板、文本、3 秒、朗读、关音效、写入已抽中 |
 | `tests/registration` | 注册流程：行动、提醒提供方、设置页、行动菜单分组 |
 | `tests/ui` | 设置页在真实 Avalonia 环境里的构建与按钮行为 |
+
+## 常见问题
+
+- **提示「此提醒提供方 id 已经被占用」或 `Key: 随机抽选` 冲突**：说明同一台机器上还装着另一个同名/同分组（「点名」）的抽选插件，ClassIsland 会同时加载两者。把旧的插件文件夹从 `data\Plugins` 里移走（不是改名，改名仍会被加载）再重启即可。
+- **点了没有反应**：先确认行动确实挂上了触发器；再检查 `data\Logs` 里的最新日志（日志在进程退出时才落盘，运行中通常是 0 字节）。
 
 ## 协议
 
