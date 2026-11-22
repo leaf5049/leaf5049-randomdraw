@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Leaf5049.RandomDraw</AssemblyName>
+    <RootNamespace>Leaf5049.RandomDraw</RootNamespace>
+    <EnableDefaultItems>true</EnableDefaultItems>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <ClassIslandDir Condition="'$(ClassIslandDir)' == ''">$(CLASSISLAND_DIR)</ClassIslandDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ClassIsland.Core">
+      <HintPath>$(ClassIslandDir)\ClassIsland.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="ClassIsland.Shared">
+      <HintPath>$(ClassIslandDir)\ClassIsland.Shared.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions">
+      <HintPath>$(ClassIslandDir)\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>$(ClassIslandDir)\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>$(ClassIslandDir)\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="CommunityToolkit.Mvvm">
+      <HintPath>$(ClassIslandDir)\CommunityToolkit.Mvvm.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Avalonia.Base">
+      <HintPath>$(ClassIslandDir)\Avalonia.Base.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Avalonia.Controls">
+      <HintPath>$(ClassIslandDir)\Avalonia.Controls.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CheckClassIslandDir" BeforeTargets="ResolveReferences">
+    <Error Condition="'$(ClassIslandDir)' == ''" Text="请先设置环境变量 CLASSISLAND_DIR，指向 ClassIsland 安装目录（目录里应有 ClassIsland.Core.dll）。" />
+  </Target>
+
+</Project>
