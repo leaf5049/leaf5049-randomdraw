@@ -1,7 +1,7 @@
 # 随机抽选（ClassIsland 插件）
 
-[![Release](https://img.shields.io/github/v/release/leaf5049/leaf5049-randomdraw?label=%E4%B8%8B%E8%BD%BD)](https://github.com/leaf5049/leaf5049-randomdraw/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/leaf5049/leaf5049-randomdraw/total)](https://github.com/leaf5049/leaf5049-randomdraw/releases)
+[![Release](https://img.shields.io/github/v/release/leaf5049/leaf5049-randomcall-stack?label=%E4%B8%8B%E8%BD%BD)](https://github.com/leaf5049/leaf5049-randomcall-stack/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/leaf5049/leaf5049-randomcall-stack/total)](https://github.com/leaf5049/leaf5049-randomcall-stack/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![ClassIsland](https://img.shields.io/badge/ClassIsland-2.x-5B8FF9)](https://github.com/ClassIsland/ClassIsland)
 
@@ -32,7 +32,7 @@
 
 1. 设置 → 插件 → 切到「市场」标签页
 2. 点右上角「…」→ **管理插件源** → 自定义插件源 → 点「+」
-3. Url 填入：`https://github.com/leaf5049/leaf5049-randomdraw/releases/download/market/leaf5049-market.zip`
+3. Url 填入：`https://github.com/leaf5049/leaf5049-randomcall-stack/releases/download/market/leaf5049-market.zip`
 4. 确定 → 关闭抽屉 → 在市场页点「刷新」
 5. 列表出现「随机抽选」后点下载安装，按提示重启 ClassIsland
 
@@ -40,7 +40,7 @@
 
 ## 本地安装
 
-1. 下载 **[leaf5049.randomdraw.cipx](https://github.com/leaf5049/leaf5049-randomdraw/releases/latest/download/leaf5049.randomdraw.cipx)**（约 112 KB），在 ClassIsland → 设置 → 插件 → 从本地安装。
+1. 下载 **[leaf5049.randomdraw.cipx](https://github.com/leaf5049/leaf5049-randomcall-stack/releases/latest/download/leaf5049.randomdraw.cipx)**（约 112 KB），在 ClassIsland → 设置 → 插件 → 从本地安装。
 2. 或者在 ClassIsland 里打开插件目录，把 `leaf5049.randomdraw` 文件夹放进去后重启。
 3. 到 设置 → 自动化 → 新建行动组，添加「随机抽选」（点名分组），给它配一个触发器（热键、时间点、浮动按钮都可以）。
 4. 名单：第一次运行会生成示例 `名单.txt`；也可以在 设置 → 随机抽选 里直接编辑保存。
