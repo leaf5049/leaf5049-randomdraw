@@ -9,7 +9,7 @@ entranceAssembly: Leaf5049.RandomDraw.dll
 version: 1.0.0.0
 apiVersion: 2.0.0.0
 author: leaf5049
-url: https://github.com/leaf5049/leaf5049-randomdraw
+url: https://github.com/leaf5049/leaf5049-randomcall-stack
 icon: icon.png
 readme: README.md
 supportedOSPlatforms:
